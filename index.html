@@ -1,0 +1,67 @@
+<!DOCTYPE html>  <html lang="id">    <head>        <meta charset="UTF-8" />          <meta name="viewport" content="width=device-width, initial-scale=1.0"/>        
+  <title>Kecak Bali — OP Experience</title>        
+  <link rel="stylesheet" href="style.css" />        
+</head>  <body>        
+  <!-- LOADER (ritual) -->        
+  <div id="loader" class="loader">        
+    <div class="loader__frame">        
+      <div class="loader__sigil">🔥</div>        
+      <div class="loader__text">        
+        <div class="loader__title">KECAK</div>        
+        <div class="loader__sub">Sacred Fire Ritual</div>        
+      </div>        
+    </div>        
+  </div>    <!-- GLOBAL LAYERS -->  <canvas id="particles" aria-hidden="true"></canvas>      
+<canvas id="cursorTrail" aria-hidden="true"></canvas>    <!-- SOUND (auto-muted until user interaction) -->    <audio id="kecakSound" preload="auto" loop>    <source src="audio/kecak.mp3" type="audio/mpeg" />  </audio>    <!-- SOUND ENABLE BUTTON (shows if autoplay blocked) -->    <button id="soundBtn" class="soundbtn" type="button" aria-label="Aktifkan suara">  
+🔊 Aktifkan Suara Kecak  
+</button>    <!-- MAIN APP (hidden until loaded) -->    <div id="app" class="app hidden">  <!-- NAVBAR -->  <nav class="navbar">        
+  <div class="logo">KECAK🔥</div>        
+  <div class="nav-links">        
+    <a href="#home">Home</a>        
+    <a href="#sejarah">Sejarah</a>        
+    <a href="#filosofi">Filosofi</a>        
+    <a href="#struktur">Struktur</a>        
+    <a href="#galeri">Galeri</a>        
+  </div>        
+</nav>    <!-- HERO (parallax mouse) -->    <header id="home" class="hero">        
+  <div class="hero__bg" data-parallax="true" style="background-image:url('img/hero.jpg');"></div>        
+  <div class="hero_overlay"></div>      <div class="hero_content">        
+    <h1 class="title pulse">Tari Kecak Bali</h1>        
+    <p class="subtitle">Api • Energi • Ritual • Tradisi</p>        
+    <a class="btn" href="#sejarah">Masuk</a>        
+  </div>        
+</header>    <!-- SECTIONS (glitch transitions on enter) -->    <main>        
+  <section id="sejarah" class="section reveal" data-glitch>        
+    <h2 class="h2 glow">Sejarah</h2>        
+    <p>        
+      Tari Kecak lahir dari ritual <b>Sanghyang</b> lalu dibentuk ulang menjadi pertunjukan        
+      yang mengangkat kisah <b>Ramayana</b>. Keunikannya: tanpa gamelan—hanya        
+      suara puluhan penari yang membangun ritme kolektif.        
+    </p>        
+  </section>      <section id="filosofi" class="section section--dark reveal" data-glitch>        
+    <h2 class="h2 glow">Filosofi</h2>        
+    <p>        
+      Lingkaran penari adalah simbol <b>kebersamaan</b>, sedangkan “<b>cak cak</b>” adalah        
+      denyut yang menyatukan napas, fokus, dan doa—menjadikan pertunjukan sebagai        
+      energi yang bergerak.        
+    </p>        
+  </section>      <section id="struktur" class="section reveal" data-glitch>        
+    <h2 class="h2 glow">Struktur Pertunjukan</h2>        
+    <ul class="list">        
+      <li><b>Pembukaan:</b> ritme terbentuk pelan, ruang “terkunci” oleh suara.</li>        
+      <li><b>Drama Ramayana:</b> konflik dharma vs adharma menguat.</li>        
+      <li><b>Hanoman:</b> momen api—puncak emosi dan visual.</li>        
+      <li><b>Penutup:</b> ritme turun, ruang kembali tenang.</li>        
+    </ul>        
+  </section>      <section id="galeri" class="section reveal" data-glitch>        
+    <h2 class="h2 glow">Galeri</h2>        
+    <div class="grid">        
+      <img class="card" src="img/kecak1.jpg" alt="kecak 1" />        
+      <img class="card" src="img/kecak2.jpg" alt="kecak 2" />        
+      <img class="card" src="img/kecak3.jpg" alt="kecak 3" />        
+    </div>        
+  </section>        
+</main>    <footer class="footer">        
+  © 2025 • KECAK — Sacred Fire Ritual Experience        
+</footer>    </div>    <script src="script.js" defer></script>  </body>        
+</html>
